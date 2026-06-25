@@ -1,0 +1,42 @@
+{
+  "name": "@oresk/pi-remote-tools",
+  "version": "0.1.0",
+  "description": "Remote SSH tools for pi coding agent. Provides ssh-read, ssh-write, ssh-edit, and ssh-bash with per-call host targeting.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovro/pi-remote-tools"
+  },
+  "keywords": [
+    "pi",
+    "pi-coding-agent",
+    "pi-extension",
+    "ssh",
+    "remote"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "!dist/*.map"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": ">=0.68.0",
+    "@earendil-works/pi-tui": ">=0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "pi": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "dependencies": {
+    "typebox": "^1.3.0"
+  }
+}
