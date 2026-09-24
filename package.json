@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oresk/pi-remote-tools"
+    "url": "git+https://github.com/oresk/pi-remote-tools.git"
   },
   "keywords": [
     "pi-package",
