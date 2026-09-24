@@ -1,6 +1,6 @@
 {
   "name": "@oresk/pi-remote-tools",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Remote SSH tools for pi coding agent. Provides ssh-read, ssh-write, ssh-edit, and ssh-bash with per-call host targeting.",
   "license": "MIT",
   "repository": {
@@ -19,7 +19,8 @@
   "main": "dist/index.js",
   "files": [
     "dist",
-    "!dist/*.map"
+    "!dist/*.map",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc",
